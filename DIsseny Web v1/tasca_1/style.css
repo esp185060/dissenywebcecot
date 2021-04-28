@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.contingut {
+
+  font-family: monospace;
+  align-content: center;
+  text-align: center;
+  width: 60%;
+  min-width:320px;
+  height: 500px;
+  margin: 0 auto;
+  background-color:aquamarine;
+}
+
+h1 {
+  font-size: 50px;
+  color:grey;
+
+
+}
+h2 {
+  margin-top: 30px;
+  font-size: 30px;
+  color:blueviolet;
+}
+li {
+  font-size: 15px;
+  margin-top: 10px;
+}
+figure img {
+  margin-top: 30px;
+  width: 70vw;
+  max-width: 550px;
+}
+main .inline {
+  display: inline;
+
+}
+ul {
+  margin-top: 30px;
+  padding-left: 100px;
+}
