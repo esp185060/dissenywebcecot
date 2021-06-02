@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Compra venta de instrumentos y equipo acústico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/icon/LOGO.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,400;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/new_instrument.css">
+  <link rel="stylesheet" media="screen and (min-width: 430px)" href="styles/tablet.css">
+  <link rel="stylesheet" media="screen and (min-width: 800px)" href="styles/desktop.css">
+  <title>Instrument barter</title>
+</head>
+<body>
+  <div id="allin">
+    <header>
+      <div id="logo">
+        <a id="mainLogo" href="index.html">
+          <img src="img/icon/LOGO.svg" alt="LOGO">
+          <h1 class="mainTitle">Instrument Barter</h1>
+        </a>
+      </div>
+      <div id="userZone">
+        <a href=""><img src="img/icon/userLogo.png" alt="user icon"></a>
+        <select name="lenguage" id="lenguage">
+          <option value="Español">Español</option>
+          <option value="English">English</option>
+          <option value="Català">Català</option>
+        </select>
+      </div>
+    </header>
+    <div id="mainNavbar">
+      <nav>
+        <a href="index.html"><img src="img/icon/home_white_24dp.svg" alt="home"></a>
+        <a href=""><img src="img/icon/message_white_24dp.svg" alt="mesages"></a>
+        <a href="#"><img src="img/icon/add_circle_outline_white_24dp.svg" alt="new"></a>
+        <a href=""><img src="img/icon/account_circle_white_24dp.svg" alt="user"></a>
+        <a href=""><img src="img/icon/tune_white_24dp.svg" alt="tuner"></a>
+      </nav>
+    </div>
+    <main>
+      <!-- formulario para subir nuevo articulo -->
+      <h2>Nuevo instrumento / equipo</h2>
+      <form action="" method="post" id="new_instrument">
+        <span>¿Que tipologia es el instrumento que quieres vender?</span><br>
+        <div>
+          <label for="category__bass_gtr">Guitarra / Bajo </label>
+          <input type="radio" name="category" id="gtr_bass">
+        </div>
+        <div>
+          <label for="category__drums">Percusión </label>
+          <input type="radio" name="category" id="drums">
+        </div>
+        <div>
+          <label for="category__keyboard">Pianos / teclados / Synth </label>
+          <input type="radio" name="category" id="keyboard">
+        </div>
+        <div>
+          <label for="category__mic">Microfonia </label>
+          <input type="radio" name="category" id="mic">
+        </div>
+        <div>
+          <label for="category__acoustic_equipment">Equipo acústico </label>
+          <input type="radio" name="category" id="acoustic_equipment">
+        </div>
+        <div>
+          <label for="marca">¿Cuál es el fabricante del instrumento?</label>
+          <input type="text" name="marca" id="marca" autocomplete>
+        </div>
+        <div>
+          <label for="modelo">¿Cuál es el modelo? SÉ PRECISO</label>
+          <input type="text" name="modelo" id="modelo" autocomplete>
+        </div>
+        <div>
+          <label for="precio">¿Por cuanto quieres venderlo?</label>
+          <input type="number" name="precio" id="precio">
+          <span>Eur</span>
+        </div>
+        <div>
+          <label for="imagen_instrumento">Subir imagen de instrumento</label>
+          <input type="file" name="imgen_instrumento" id="imagen_insrumento">
+        </div>
+        
+      </form>
+    </main>
+    <footer id="bottom">
+      <p>Copyright 2021 Instrument Barter &copy;</p>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

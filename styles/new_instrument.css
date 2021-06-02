@@ -1,0 +1,210 @@
+:root {
+/* colores */
+  --base-vermell: rgb(158, 10, 10);
+  --base-gris: rgb(66, 75, 84);
+  --base-blaufosc: rgb(1, 22, 39);
+  --base-groc: rgb(247, 181, 56);
+  --variacio-grocmigblanc: #FBD99B; 
+  --variacio-grocblanc: #FDECCD;
+  --base-taronja: rgb(219,124,38);
+  --variacio-taronjablanc: #E9AD76;
+  --variacio-backgroundblau: #0577D3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  font-family: 'Libre Franklin', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#allin {
+  align-self: center;
+  display: flex;
+  flex-direction:column;
+  width: 95vw;
+}
+#mainLogo {
+  text-decoration: none;
+  width: 60px;
+}
+#mainLogo img {
+  width: 40px;
+  border-radius: 50px;
+}
+.mainTitle {
+  margin-left: 5px;
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
+  color: var(--base-blaufosc);
+}
+#logo {
+  margin-top: 1rem;
+  text-align: center;
+}
+#logo img {
+  width: 50px;
+}
+a {
+  text-decoration: none;
+  color:var(--base-blaufosc)
+}
+a:active {
+  color:inherit;
+}
+li {
+  list-style: none;
+}
+#userZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#userZone img {
+  width: 50px;
+}
+#userZone select {
+  font-family: inherit;
+  border-radius: 10px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  background: var(--variacio-grocblanc);
+}
+#userZone a {
+  text-align: center;
+}
+header {
+  border-radius: 10px;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  background-color: var(--base-groc);
+  box-shadow: 3px 3px 5px var(--base-vermell);
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  border: 1px solid var(--base-vermell);
+  margin-bottom: 0px;
+}
+#mainNavbar img {
+  width: 3rem;
+}
+#mainNavbar nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border: 3px solid var(--base-gris);
+  border-radius: 30px;
+  background-color: var(--base-blaufosc);
+}
+#mainNavbar {
+  position: fixed;
+  bottom: 0.2px;
+  width: 100%;
+  padding: 10px;
+  padding-top:0;
+  z-index: 2;
+  opacity: 0.9;
+  backdrop-filter: blur(5px);
+}
+#category ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  height: 40px;
+  margin: 1rem;
+  background-color:var(--variacio-grocmigblanc);
+  border-radius: 50px;
+  z-index: 2;
+}
+#category img {
+  width: 3rem;
+  border-radius: 50px;
+}
+main {
+/* with css grid */
+  /* display: grid;
+  grid-template-columns: 135px 135px 135px 135px;
+  grid-auto-rows: 360px;
+  grid-auto-flow: dense; */
+/* with flex box */
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 20px;
+  background-color: var(--variacio-grocmigblanc);
+  box-shadow: 3px 3px 5px var(--base-vermell);
+  border: 1px solid var(--base-vermell);
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+}
+input {
+  background-color: var(--variacio-grocblanc);
+  /* margin-top: 3rem; */
+  display: inherit;
+  border: 1px solid var(--base-gris);
+  max-width: 600px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+input [type="radio"] {
+  align-self: center;
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+}
+label {
+  min-width:50px;
+  width: 60%;
+}
+#bottom {
+  font-size: 1.8rem;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+  margin-top: 10px;
+  background-color: var(--variacio-grocblanc);
+    box-shadow: 3px 3px 5px var(--base-vermell);
+  border: 1px solid var(--base-vermell);
+  border-radius: 10px;
+}
+@media screen and (orientation:landscape) 
+and (max-width: 1200px)
+{
+header h1, select {
+  display: none;
+}
+
+}

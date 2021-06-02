@@ -16,22 +16,29 @@
   --variacio-grocblanc: #FDECCD;
   --base-taronja: rgb(219,124,38);
   --variacio-taronjablanc: #E9AD76;
+  --variacio-backgroundblau: #0577D3;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 html {
   font-size: 62.5%;
 }
 body {
-  width: 100vw;
+  width: 100%;
   font-family: 'Libre Franklin', sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+#allin {
+  align-self: center;
+  display: flex;
+  flex-direction:column;
+  width: 95vw;
 }
 #mainLogo {
   text-decoration: none;
@@ -163,7 +170,13 @@ header {
   border-radius: 50px;
 }
 main {
-  display: flex;
+/* with css grid */
+  /* display: grid;
+  grid-template-columns: 135px 135px 135px 135px;
+  grid-auto-rows: 360px;
+  grid-auto-flow: dense; */
+/* with flex box */
+    display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1rem;
@@ -173,6 +186,8 @@ main {
   height: 300px;
 }
 .productBox {
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
@@ -184,6 +199,7 @@ main {
   z-index: 1;
   right: 6px;
   top: 170px;
+  color: var(--base-blaufosc);
 }
 #filterbox img {
   padding: 5px;
@@ -203,9 +219,15 @@ main {
   padding-top: 10px;
   margin-top: 10px;
   background-color: var(--variacio-grocblanc);
+  box-shadow: 3px 3px 5px var(--base-vermell);
+  border: 1px solid var(--base-vermell);
+  border-radius: 10px;
 }
-@media screen and (orientation:landscape) {
+@media screen and (orientation:landscape) 
+and (max-width: 1200px)
+{
 header h1, select {
   display: none;
 }
+
 }
